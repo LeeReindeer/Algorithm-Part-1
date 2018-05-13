@@ -47,6 +47,9 @@ public class Solver {
    * @param initial initial board
    */
   public Solver(Board initial) {
+    if (initial == null)  {
+      throw new IllegalArgumentException();
+    }
 
     this.solvable = false;
 
